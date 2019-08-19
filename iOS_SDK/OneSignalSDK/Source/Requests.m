@@ -41,7 +41,8 @@
 + (instancetype)withUserId:(NSString *)userId appId:(NSString *)appId {
     let request = [OSRequestGetTags new];
     
-    request.parameters = @{@"app_id" : appId};
+  NSDictionary *extractedExpr = @{@"app_id" : appId};
+  request.parameters = extractedExpr;
     request.method = GET;
     request.path = [NSString stringWithFormat:@"players/%@", userId];
     

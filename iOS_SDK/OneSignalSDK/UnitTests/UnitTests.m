@@ -2266,7 +2266,7 @@ didReceiveRemoteNotification:userInfo
     
     [UnitTestCommonMethods runBackgroundThreads];
     
-    let notification = (NSDictionary *)[self exampleNotificationJSONWithMediaURL:@"https://www.onesignal.com"];
+    let notification = (NSDictionary *)[self exampleNotificationJSONWithMediaURL:@"https://www.signalone.app"];
     
     let notifResponse = [UnitTestCommonMethods createBasiciOSNotificationResponseWithPayload:notification];
     
